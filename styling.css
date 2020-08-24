@@ -1,3 +1,82 @@
 /*This is my styling document for the flyo landing page*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+footer{
+	position: absolute;
+	bottom:0;
+
+}
+
+.my_header{
+
+	background-color: hsl(217, 28%, 15%);
+	position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+
+}
+
+.nav_bar{
+	background: pink;
+	overflow:hidden;
+}
+
+/*This aligns the list items to the right without chnaging the order*/
+ul{
+	float: right;
+}
+
+ul li{
+    display:inline-block;
+    margin-left:20px;
+    margin-right: 20px;
+    color:white;
+}
+
+
+html, body{
+
+    height:100%;
+    width:100%;
+    margin:0;
+
+    /**Hides the white space to the right of the webpage*/
+    overflow-x:hidden;
+
+}
+
+
+#container{
+
+	background: green;
+	width:auto;
+	min-height:100%;
+
+	display:grid;
+    grid-template-rows: 600px 400px;
+    grid-template-areas:
+        "content"
+        "the-footer";
+
+
+}
+
+.grid1{
+	grid-area: content;
+	background:purple;
+
+}
+
+.grid2{
+	grid-area: the-footer;
+	background:hsl(218, 28%, 13%);
+	
+}
